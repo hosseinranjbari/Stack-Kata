@@ -15,7 +15,7 @@ Voici les primitives communément utilisées pour manipuler des piles. Il n'exis
  - « Dupliquer l'élément de tête » et « échanger les deux premiers éléments » : existe sur les calculatrices fonctionnant en notation polonaise inverse. Les termes anglais correspondants sont dup et swap respectivement.
 
 Here are the tests that Uncle Bob lays out in his screencast.
-Can create Stack object.
+ - Can create Stack object.
  - Newly created stacks should be empty.
  - After one push, stack size should be one.
  - After one push and one pop, should be empty.
