@@ -6,13 +6,13 @@ général, le dernier élément, ajouté à la pile, sera le premier à en sorti
 **`Primitives`**
 
 Voici les primitives communément utilisées pour manipuler des piles. Il n'existe pas de normalisation pour les primitives de manipulation de pile. Leurs noms sont donc indiqués de manière informelle. Seules les trois premières sont réellement indispensables, les autres pouvant s'en déduire.
- - « Empiler » : ajoute un élément sur la pile. Le terme anglais correspondant est push.
- - « Dépiler » : enlève un élément de la pile et le renvoie. Le terme anglais correspondant est pop.
+ - « Empiler » : ajoute un élément sur la pile. Le terme anglais correspondant est _push_.
+ - « Dépiler » : enlève un élément de la pile et le renvoie. Le terme anglais correspondant est _pop_.
  - « La pile est-elle vide ? » : renvoie vrai si la pile est vide, faux sinon.
- - « Nombre d'éléments de la pile » : renvoie le nombre d'éléments dans la pile. Selon les implémentations, peut être fait soit en temps constant soit en temps linéaire.
- - « Quel est l'élément de tête ? » : renvoie l'élément de tête sans le dépiler. Le terme anglais correspondant est peek ou top.
- - « Vider la liste » : dépiler tous les éléments. Selon l'implémentation, cela peut être fait en temps constant ou linéaire. Le terme anglais correspondant est clear.
- - « Dupliquer l'élément de tête » et « échanger les deux premiers éléments » : existe sur les calculatrices fonctionnant en notation polonaise inverse. Les termes anglais correspondants sont dup et swap respectivement.
+ - « Nombre d'éléments de la pile » : renvoie le nombre d'éléments dans la pile.
+ - « Quel est l'élément de tête ? » : renvoie l'élément de tête sans le dépiler. Le terme anglais correspondant est _peek_ ou _top_.
+ - « Vider la liste » : dépiler tous les éléments. Le terme anglais correspondant est _clear_.
+ - « Dupliquer l'élément de tête » et « échanger les deux premiers éléments » : existe sur les calculatrices fonctionnant en notation polonaise inverse. Les termes anglais correspondants sont _dup_ et _swap_ respectivement.
 
 Here are the tests that Uncle Bob lays out in his screencast.
  - Can create Stack object.
