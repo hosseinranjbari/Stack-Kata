@@ -1,15 +1,15 @@
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 
 public class StackTest {
     MyStack myStack;
 
     @BeforeEach
     public void init() {
-        myStack = new MyStack();
+        myStack = new MyStack(5);
     }
 
 
@@ -31,5 +31,19 @@ public class StackTest {
         myStack.pop();
 
         assertThat(myStack.getSize()).isEqualTo(0);
+    }
+
+    @Test
+    void when_pushed_passed_limit_should_throw_stack_overflow_exception() {
+        myStack.push("A");
+        myStack.push("B");
+        myStack.push("C");
+        myStack.push("D");
+        myStack.push("E");
+
+        assertThatExceptionOfType(StackOverflowException.class)
+                .isThrownBy(() -> myStack.push("F"));
+
+
     }
 }
